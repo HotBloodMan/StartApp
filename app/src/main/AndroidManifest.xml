@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dk.startapp">
+    <!-- com.dk.startapp -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permnission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <application
+        android:name=".DemoApplication"
+        android:allowBackup="true"
+        android:label="${app_name}"
+        android:supportsRtl="true"
+        tools:replace="android:name,android:label">
+        <activity android:name=".OGActivity"
+            android:theme="@style/FuXiTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GestureActivity"
+            android:theme="@style/FuXiTheme">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".TabClickActivity"
+            android:theme="@style/FuXiTheme" />
+        <activity
+            android:name=".AudioTestActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/FuXiTheme">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".NewVideoActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/FuXiTheme" />
+        <activity
+            android:name=".FreeControlSeekBarActivity"
+            android:theme="@style/FuXiTheme" />
+        <activity
+            android:name=".surface.SurfaceActivity"
+            android:theme="@style/FuXiTheme" />
+        <activity
+            android:name=".BrightActivity"
+            android:theme="@style/FuXiTheme" />
+        <activity
+            android:name=".AudioSeekbarActivity"
+            android:theme="@style/AppTheme">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/FuXiTheme">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+    </application>
+
+</manifest>

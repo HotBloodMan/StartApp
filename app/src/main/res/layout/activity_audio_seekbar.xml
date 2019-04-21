@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ringtone_parent"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_marginTop="0dip"
+    android:layout_weight="1"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#88000000"
+    android:orientation="vertical" >
+
+    <!--android:background="?android:attr/selectableItemBackground"-->
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <SeekBar
+        android:id="@+id/seek_bar_video123"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:max="0"
+        android:progress="20"
+        android:progressDrawable="@drawable/seekbar_progress_layer_list"
+        android:thumb="@mipmap/play_seekbar_icon"
+        android:layout_weight="18"/>
+</LinearLayout>
+   <!--<ImageButton-->
+    <!--android:layout_width="100dp"-->
+       <!--android:layout_marginTop="40dp"-->
+    <!--android:layout_height="100dp"-->
+<!--android:visibility="gone"-->
+       <!--android:src="@drawable/ic_launcher_round"-->
+       <!--android:background="@drawable/ripple_bg"-->
+    <!--android:text="HelloWorld"-->
+    <!--android:textSize="36sp"-->
+    <!--/>-->
+   <!--<Button-->
+    <!--android:layout_width="match_parent"-->
+       <!--android:layout_marginTop="40dp"-->
+    <!--android:layout_height="100dp"-->
+       <!--android:visibility="gone"-->
+    <!--android:text="HelloWorld"-->
+    <!--android:textSize="36sp"-->
+    <!--/>-->
+</LinearLayout>
